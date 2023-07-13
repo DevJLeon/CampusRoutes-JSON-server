@@ -1,0 +1,36 @@
+/* Carousel */
+
+.carousel{
+  position: relative;
+}
+
+.carousel img{
+  object-fit: cover;
+  object-position: center;
+  height: 700px;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 80px;
+  right: 15px;
+  font-weight: bold;
+  text-align: right;
+  font-size: 50px;
+  color: #4FC0D0;
+  text-shadow: 3px 3px 1px #164B60;
+  transition: .2s;
+  cursor: default;
+}
+
+.overlay:hover{
+  position: absolute;
+  top: 80px;
+  right: 15px;
+  font-weight: bold;
+  text-align: right;
+  font-size: 50px;
+  color: #A2FF86;
+  text-shadow: 3px 3px 1px #164B60;
+}

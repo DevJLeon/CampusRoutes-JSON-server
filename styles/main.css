@@ -1,0 +1,20 @@
+body{
+  background-color: #1b6b93;
+}
+
+.navbar{
+  background-color: #164B60;
+}
+
+.nav-item a{
+  color: #4FC0D0;
+  transition: .2s;
+}
+
+.nav-item a:hover{
+  color: #A2FF86;
+}
+
+.nav-icon{
+  max-width: 40px;
+}

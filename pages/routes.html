@@ -11,7 +11,7 @@
   <link rel="icon" href="../assets/img/logo.png">
   <link rel="stylesheet" href="../styles/main.css">
   <link rel="stylesheet" href="../styles/routes.css">
-  <script src="app/main.js" defer></script>
+  <script src="../app/main.js" defer></script>
 </head>
 <body>
   <!--NAVBAR-->
@@ -31,7 +31,9 @@
     </div>
   </nav>
 
-
+  <div class="container d-flex justify-content-center align-items-center">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Crear Ruta</button>
+  </div>
   <div class="container-fluid d-flex justify-content-center align-items-center">
     <div class="container routes-container justify-content-center">
       <div class="row-xl route">
@@ -60,6 +62,41 @@
       </div>
     </div>
   </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Creación de rutas</h1>
+        <button type="button" class="btn-close close-modal-btn1" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form class="createRouteForm">
+        <div class="modal-body">
+          <div class="createRouteInputs">
+            <div class="form-floating mb-3">
+              <input type="text" name="routeName" class="form-control" id="routeName floatingInput-Route" placeholder="Ruta del Sol" required>
+              <label for="floatingInput">Nombre ruta</label>
+            </div>
+            <div class="form-floating">
+              <input type="text" name="pointName" class="form-control" id="pointName" placeholder="Punto" required>
+              <label for="floatingPassword">Punto</label>
+            </div>
+          </div>
+
+          <div class="addPointDiv">
+            <button type="button" class="btn addPointBtn"> + Añadir punto</button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary close-modal-btn2" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Create Route</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
 
 
   <!--Bootstrap-->

@@ -62,6 +62,22 @@
     transition: .2s;
 }
 
+/* Modal customization */
+
+.createRouteInputs input{
+    margin-bottom: 15px;
+}
+
 .botones input:hover{
     transform: scale(1.05);
+}
+
+.addPointBtn{
+    background-color: #3bce47;
+    transition: .2s;
+    margin-top: 20px;
+}
+
+.addPointBtn:hover{
+    background-color: #59e465;
 }

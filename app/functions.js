@@ -138,3 +138,41 @@ export async function addRoute(e) {
 
     $createRouteForm.reset();
 }
+
+export async function editRoute(e){
+    if(e.target.matches(".edit")){
+        console.log("Edit Button Working")
+    }
+}
+
+export async function deleteRoute(e){
+    if(e.target.matches(".delete")){
+        console.log("Delete Button Working")
+        const deleteId = e.target.getAttribute("data-id")
+        
+        try{
+            let optionsRuta = {
+                method:"POST",
+                headers:{
+                    "Content-type":"application/json; chatset=utf-8"
+                },
+                body:JSON.stringify({
+                    nombre:nombreRuta
+                })
+            };
+            const resRutas = fetch(`${URL}/Rutas`,optionsRuta);
+            const resPuntos = fetch(`${URL}/Puntos`);
+        
+            const [responseRutas, responsePuntos] = await Promise.all([resRutas, resPuntos]);
+        
+            const jsonRutas = await responseRutas.json();
+            const jsonPuntos = await responsePuntos.json();
+        
+            const rutas = jsonRutas;
+            const puntos = jsonPuntos;
+        }catch(error){
+            console.log("Error del modal formulario: "+error)
+        }
+        
+    }
+}

@@ -1,16 +1,8 @@
-const $createRouteForm = document.querySelector(".createRouteForm");
-const $addPointBtn = document.querySelector(".addPointBtn");
-const $createRouteInputs = document.querySelector(".createRouteInputs");
-const $closeModalBtn1 = document.querySelector(".close-modal-btn1");
-const $closeModalBtn2 = document.querySelector(".close-modal-btn2");
+import {addRoute,cargarRutas} from "../app/functions.js";
+import {$createRouteForm,$routeTemplate, $addPointBtn,$createRouteInputs,$closeModalBtn1,$closeModalBtn2,} from "../app/domVars.js"
 
-$createRouteForm.addEventListener("submit", (e)=>{
-    e.preventDefault();
 
-    nombreRuta = $createRouteForm.routeName.value
-
-    $createRouteForm.reset();
-})
+$createRouteForm.addEventListener("submit",addRoute)
 
 $addPointBtn.addEventListener("click", ()=>{
     const newPoint = document.createElement("div");
@@ -51,3 +43,7 @@ $closeModalBtn2.addEventListener("click", () => {
     </div>
     `
 });
+
+// API FETCH
+
+document.addEventListener("DOMContentLoaded",cargarRutas)

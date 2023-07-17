@@ -1,34 +1,50 @@
 {
-  "Rutas":[
-    {"id":1,
-  "NomRuta":"Cafetera"},
-  {"id":2,
-"NomRuta":"Del Sol"}
-  ],
-  "Puntos":[
+  "Rutas": [
     {
-      "Id":1,
-      "NomPuntos":"Manizales",
-      "RutaId": 1,
+      "id": 1,
+      "nombre": "Cafetera"
+    },
+    {
+      "id": 2,
+      "nombre": "Del Sol"
+    },
+    {
+      "id": 3,
+      "nombre": "Ruta del Gato"
+    },
+    {
+      "nombre": "Ruta del Arroz",
+      "id": 4
+    },
+    {
+      "nombre": "Ruta del Cacao",
+      "id": 5
+    }
+  ],
+  "Puntos": [
+    {
+      "id": 1,
+      "nomPunto": "Manizales",
+      "rutaId": 1,
       "Imagen": "https://colombia.com/bucaramanga.jpg"
     },
     {
-      "Id": 2,
-      "NomPuntos": "Armenia",
-      "RutaId": 1,
+      "id": 2,
+      "nomPunto": "Armenia",
+      "rutaId": 1,
       "Imagen": "https://colombia.com/barranca.jpg"
-      },
-      {
-      "Id": 3,
-      "NomPuntos": "Tunja",
-      "RutaId": 2,
+    },
+    {
+      "id": 3,
+      "nomPunto": "Tunja",
+      "rutaId": 2,
       "Imagen": "https://colombia.com/bogota.jpg"
-      },
-      {
-      "Id": 4,
-      "NomPuntos": "Bucaramanga",
-      "RutaId": 2,
+    },
+    {
+      "id": 4,
+      "nomPunto": "Bucaramanga",
+      "rutaId": 2,
       "Imagen": "https://colombia.com/cajica.jpg"
-      }
+    }
   ]
 }

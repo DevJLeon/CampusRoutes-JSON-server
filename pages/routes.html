@@ -11,7 +11,8 @@
   <link rel="icon" href="../assets/img/logo.png">
   <link rel="stylesheet" href="../styles/main.css">
   <link rel="stylesheet" href="../styles/routes.css">
-  <script src="../app/main.js" defer></script>
+  <script src="../app/main.js" type="module" defer></script>
+
 </head>
 <body>
   <!--NAVBAR-->
@@ -36,11 +37,31 @@
   </div>
   <div class="container-fluid d-flex justify-content-center align-items-center">
     <div class="container routes-container justify-content-center">
-      <div class="row-xl route">
+
+      <div class="row-xl route route-template">
         <img class="route-icon" src="../assets/img/routes.png" alt="">
         <div class="container route-info justify-content-center">
           <span class="route-title bold">Ruta:</span><br>
-          <div class="route-name">Ruta del sol</div>
+          <div class="route-name"></div>
+          
+        </div>
+        <div class="route-nodes">
+          <div class="nodes-tag">puntos:</div>
+          <ul class="points-list">
+
+          </ul>
+        </div>
+        <div class="botones">
+          <input type="submit" data-accion="Eliminar" value="Eliminar" class="btn-guardar bg-danger border-0 rounded bg-secondary px-2">
+          <input type="button" data-bs-toggle="modal" data-bs-target="#modalModificar"  data-accion="Actualizar" value="Actualizar" class="btn-guardar bg-warning border-0 rounded bg-secondary px-2">
+        </div>
+      </div>
+
+      <div class="row-xl route route-template">
+        <img class="route-icon" src="../assets/img/routes.png" alt="">
+        <div class="container route-info justify-content-center">
+          <span class="route-title bold">Ruta:</span><br>
+          <div class="route-name">Ruta del Gacelin</div>
           
         </div>
         <div class="route-nodes">
@@ -57,9 +78,7 @@
           <input type="button" data-bs-toggle="modal" data-bs-target="#modalModificar"  data-accion="Actualizar" value="Actualizar" class="btn-guardar bg-warning border-0 rounded bg-secondary px-2">
         </div>
       </div>
-      <div class="row-xl route">
-        <img class="route-icon" src="../assets/img/routes.png" alt="">
-      </div>
+
     </div>
   </div>
 
